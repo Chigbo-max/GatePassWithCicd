@@ -19,5 +19,7 @@ jobs:
           java-version: 23.0.2
       - name: Maven Package
         run: mvn -B clean package -DskipTests
+        working-directory: ./DigitalGatePass
       - name: Maven Verify
         run: mvn -B clean verify
+        working-directory: ./DigitalGatePass
